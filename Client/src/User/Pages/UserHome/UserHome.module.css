@@ -1,0 +1,11 @@
+.container{
+    border:1px solid;
+    display:flex;
+}
+
+
+.content{
+    flex: 1;
+    padding: 28px;
+    animation: pageEnter 0.4s ease;
+}

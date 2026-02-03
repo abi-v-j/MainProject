@@ -1,0 +1,93 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f9;
+}
+
+.profileBox {
+  width: 420px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imageBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  object-fit: cover;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table {
+  border: 1px solid #ddd;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.cellLabel {
+  width: 40%;
+  padding: 10px;
+  font-weight: 600;
+  background: #f1f1f1;
+  border-right: 1px solid #ddd;
+}
+
+.cellValue {
+  width: 60%;
+  padding: 10px;
+  color: #555;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.editBtn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.passwordBtn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  background: #0056b3;
+}
+
+.passwordBtn:hover {
+  background: #1e7e34;
+}

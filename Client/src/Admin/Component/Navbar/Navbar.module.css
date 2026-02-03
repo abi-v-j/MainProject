@@ -1,0 +1,15 @@
+.container{
+
+    
+     border:1px solid;
+    width:1700px;
+    height:60px;
+    text-align: center;
+    background-color: rgb(211, 193, 196);
+    margin: 4px 2px;
+    border-radius: 12px;
+    position: fixed;
+    z-index: 900;
+    
+    
+ } 

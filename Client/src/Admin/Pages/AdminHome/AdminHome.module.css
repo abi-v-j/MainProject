@@ -1,0 +1,17 @@
+.container{
+    border:1px solid;
+    display:flex;
+}
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+.content{
+    flex: 1;
+    padding: 28px;
+    animation: pageEnter 0.4s ease;
+}

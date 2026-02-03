@@ -1,0 +1,159 @@
+/* =========================
+   Page wrapper (sidebar safe)
+========================= */
+.page {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  min-height: 100vh;
+}
+
+/* =========================
+   Background
+========================= */
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  margin: 0;
+}
+
+/* =========================
+   Form Container
+========================= */
+.container {
+  width: 420px;
+  margin: 90px auto 40px auto;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+.heading {
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Label */
+.container label {
+  color: rgba(255, 255, 255, 0.85);
+  align-self: flex-start;
+  margin-bottom: 6px;
+}
+
+/* Input */
+.filed {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  outline: none;
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  gap: 14px;
+}
+
+.button,
+.button1 {
+  padding: 10px 24px;
+  font-size: 15px;
+  border-radius: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.button {
+  background: linear-gradient(135deg, #00c853, #64dd17);
+  color: #fff;
+}
+
+.button1 {
+  background: linear-gradient(135deg, #ff1744, #ff5252);
+  color: #fff;
+}
+
+/* =================================================
+   DISPLAY SECTION (GRID – PERFECTLY ALIGNED)
+================================================= */
+
+:global(.district-table) {
+  width: 900px;
+  margin: 0 auto 60px auto;
+
+  border-radius: 16px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 5 columns → MUST match JSX */
+:global(.district-row) {
+  display: grid;
+  grid-template-columns: 80px 1.5fr 2fr 2fr 120px;
+  align-items: center;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+:global(.district-header) {
+  background: rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Cells */
+:global(.district-cell) {
+  padding: 12px 16px;
+  color: #ffffff;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Action column */
+:global(.district-cell.action) {
+  text-align: center;
+}
+
+/* Delete hover */
+:global(.district-cell.delete) {
+  cursor: pointer;
+  color: #ff6b6b;
+}
+
+:global(.district-cell.delete:hover) {
+  text-decoration: underline;
+}
+
+/* Hover row */
+:global(.district-row:not(.district-header):hover) {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+:global(.district-row:last-child) {
+  border-bottom: none;
+}

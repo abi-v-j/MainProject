@@ -1,0 +1,76 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #161515;
+    border-radius: 8px;
+    background-color: #f4eaef;
+    width: 400px;
+    height: auto;
+    margin: 100px auto;     /* centers the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 10px;
+
+}
+.heading{
+    color:rgb(24, 25, 24);
+    display:flex;
+    justify-content: center;
+}
+.button {
+    background-color: #4CAF50;
+    border: 1px solid black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+     
+}
+.button1{
+    background-color: #ea2009;
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    
+}
+.filed {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    box-shadow: 5px 5px 5px rgba(218, 11, 11, 0.1);
+    cursor: crosshair;
+    background-color:rgb(237, 226, 237);
+}
+.email{
+    display:flex;
+    gap:20px;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover {
+    background-color: #1d8bb3;   /* darker green */
+    transform: scale(1.05);      /* slight zoom */
+}
+.button1:hover {
+    background-color: #95c106;   /* darker red */
+    transform: scale(1.05);   
+}
+
+        

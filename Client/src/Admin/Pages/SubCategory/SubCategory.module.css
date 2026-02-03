@@ -1,0 +1,81 @@
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.container h1 {
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Select & Input fields */
+.field,
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.field:focus,
+.input:focus {
+  border-color: #007bff;
+}
+
+/* Buttons container */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.button:last-child {
+  background-color: #6c757d;
+  color: white;
+}
+
+.button:last-child:hover {
+  background-color: #5a6268;
+}

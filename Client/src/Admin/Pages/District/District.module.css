@@ -1,0 +1,258 @@
+/* ================================
+   SmartCity360 – District Page
+   Glassmorphism + Neon Style
+   ================================ */
+
+.container {
+  width: 420px;
+  margin: 120px auto;
+  padding: 2.5rem 2.2rem;
+
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 18px;
+  border: 1px solid rgba(0, 234, 255, 0.18);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* Heading */
+.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  background: linear-gradient(135deg, #00eaff, #7b2ff7);
+  -webkit-text-fill-color: transparent;
+
+  text-align: center;
+}
+
+/* Label */
+.container label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Input */
+.filed {
+  width: 100%;
+  padding: 0.75rem 1rem;
+
+  border-radius: 10px;
+  border: 1px solid rgba(0, 234, 255, 0.35);
+
+  background: rgba(5, 10, 26, 0.85);
+  color: #ffffff;
+  font-size: 0.95rem;
+
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.filed::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.filed:focus {
+  border-color: #00eaff;
+  box-shadow:
+    0 0 0 3px rgba(0, 234, 255, 0.15),
+    0 0 25px rgba(0, 234, 255, 0.25);
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.button {
+  padding: 0.6rem 1.8rem;
+  border-radius: 30px;
+  border: none;
+
+  background: linear-gradient(135deg, #00eaff, #7b2ff7);
+  color: #ffffff;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.45);
+}
+
+.button1 {
+  padding: 0.6rem 1.8rem;
+  border-radius: 30px;
+
+  background: transparent;
+  border: 1px solid rgba(255, 80, 80, 0.6);
+  color: #ff6b6b;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button1:hover {
+  background: rgba(255, 80, 80, 0.1);
+  box-shadow: 0 8px 25px rgba(255, 80, 80, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ================================
+   Div-Based Table Styles
+   ================================ */
+
+.listWrapper {
+  max-width: 820px;
+  margin: 30px auto;
+
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 14px;
+  border: 1px solid rgba(0, 234, 255, 0.18);
+  overflow: hidden;
+}
+
+/* HEADER + ROW AS GRID (TABLE-LIKE) */
+.listHeader,
+.listRow {
+  display: grid;
+  grid-template-columns: 80px 1fr 160px;
+  align-items: center;
+
+  padding: 12px 16px;
+}
+
+.listHeader {
+  font-weight: 600;
+  color: #00eaff;
+  background: rgba(0, 234, 255, 0.08);
+  border-bottom: 1px solid rgba(0, 234, 255, 0.2);
+}
+
+.listRow {
+  color: #ffffff;
+  font-size: 0.95rem;
+  transition: background 0.25s ease;
+}
+
+.listRow:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.listRow:hover {
+  background: rgba(0, 234, 255, 0.05);
+}
+
+.cellIndex {
+  opacity: 0.7;
+}
+
+.cellName {
+  font-weight: 500;
+}
+
+/* Action Column */
+.actionHeader {
+  text-align: center;
+}
+
+.cellAction {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Edit Link */
+.editLink {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #00eaff;
+  text-decoration: none;
+
+  padding: 0.35rem 0.9rem;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 234, 255, 0.6);
+
+  transition: all 0.25s ease;
+}
+
+.editLink:hover {
+  background: rgba(0, 234, 255, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 234, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Delete Button */
+.deleteBtn {
+  padding: 0.35rem 0.9rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 80, 80, 0.6);
+
+  background: transparent;
+  color: #ff6b6b;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.deleteBtn:hover {
+  background: rgba(255, 80, 80, 0.12);
+  box-shadow: 0 6px 18px rgba(255, 80, 80, 0.3);
+  transform: translateY(-1px);
+}
+
+.emptyState {
+  padding: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container,
+  .listWrapper {
+    width: 92%;
+  }
+
+  .listHeader,
+  .listRow {
+    grid-template-columns: 60px 1fr 120px;
+  }
+}
